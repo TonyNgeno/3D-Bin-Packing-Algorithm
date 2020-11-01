@@ -11,12 +11,12 @@ public class PackAlgorithmMain {
 		Scanner loInput = new Scanner(System.in);
 
 		// Read container dimensions
-		int liCntWidth = loInput.nextInt();
-		int liCntLength = loInput.nextInt();
-		int liCntHeight = loInput.nextInt();
+		int CntWidth = loInput.nextInt();
+		int CntLength = loInput.nextInt();
+		int CntHeight = loInput.nextInt();
 		
 		// Create container
-		Shape loContainer = new Box(liCntWidth, liCntLength, liCntHeight);
+		Shape loContainer = new Box(CntWidth, CntLength, CntHeight);
 
 		// Read box count
 		int liBoxCount = loInput.nextInt();

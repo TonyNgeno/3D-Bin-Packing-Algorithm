@@ -4,10 +4,10 @@ import java.util.*;
 
 public class PackingAlgorithm {
 
-	private static boolean ibShowProgress = false; // show progress? (slows algorithm)
+	private static boolean ShowProgress = false; // show progress? (slows algorithm)
 
 	public void statPack(Shape shape, List<Shape> aoShapes) {
-		System.out.println("Starting to pack.");
+		System.out.println("Beggining to pack.");
 
 		// Create clone of shapes
 		ArrayList ShapesCopy = new ArrayList<Shape>(Arrays.asList(aoShapes
@@ -70,7 +70,7 @@ public class PackingAlgorithm {
 			loCurrentShape.matchPositionOf(shape);
 			aoShapes.remove(loCurrentShape);
 			
-			if (ibShowProgress)
+			if (ShowProgress)
 				System.out.println("Packed " + loCurrentShape.toFullString()
 						+ " into container " + aiContainerNum + ".");
 
